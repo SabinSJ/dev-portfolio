@@ -1,0 +1,30 @@
+{
+    "CV Generator":{
+        "title": "CV Generator",
+        "description": "A CV generator that allows users to create and download their CVs in PDF",
+        "madeWith": "Next.js, React, Tailwind CSS, PDF Generation",
+        "image": "/images/cv-generator.png",
+        "link": ""
+    },
+    "Eccomerce App":{
+        "title": "Eccomerce App",
+        "description": "An e-commerce application with product listings, cart, and checkout functionality",
+        "madeWith": "Next.js, React, Tailwind CSS, PDF Generation",
+        "image": "/images/cv-generator.png",
+        "link": ""
+    },
+    "Instagram Clone":{
+        "title": "Instagram Clone",
+        "description": "A clone of Instagram with features like posts, likes, and comments",
+        "madeWith": "Next.js, React, Tailwind CSS, PDF Generation",
+        "image": "/images/cv-generator.png",
+        "link": ""
+    },
+    "Radiation Exposure App":{
+        "title": "Radiation Exposure App",
+        "description": "An app that calculates radiation exposure",
+        "madeWith": "Next.js, React, Tailwind CSS, PDF Generation",
+        "image": "/images/cv-generator.png",
+        "link": ""
+    }
+}

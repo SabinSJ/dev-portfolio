@@ -1,0 +1,31 @@
+{
+    "Skills":{
+
+        "Backend": [
+            "Node.js",
+            "Express.js",
+            "GraphQL"
+        ],
+        "Frontend": [
+            "React",
+            "Next.js",
+            "Angular",
+            "Remix"
+        ],
+        "Styling & Design": [
+            "CSS",
+            "Sass",
+            "Tailwind CSS",
+            "Material UI"
+        ],
+        "Miscellaneous": [
+            "Git",
+            "Docker",
+            "PostgreSQL",
+            "MongoDB",
+            "Jest",
+            "Cypress",
+            "Rest APIs"
+        ]
+    }
+}
