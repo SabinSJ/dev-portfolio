@@ -1,0 +1,286 @@
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #050605e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.caseModal {
+  width: min(1040px, 100%);
+  height: min(880px, calc(100vh - 48px));
+  background: #121613;
+  border: 1px solid #ffffff29;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalTopbar {
+  flex: 0 0 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid #ffffff1b;
+  color: #858e86;
+  font-size: 12px;
+}
+
+.iconButton {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #ffffff24;
+  background: transparent;
+  color: #cbd1cc;
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.iconButton:hover {
+  border-color: #788579;
+  color: #fff;
+}
+
+.modalScroll {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.modalInner {
+  padding: 65px 72px 0;
+}
+
+.caseIntro {
+  max-width: 730px;
+}
+
+.caseIntro h2 {
+  font:
+    600 clamp(43px, 6vw, 70px) / 1.12 "Manrope",
+    sans-serif;
+  letter-spacing: -0.055em;
+  margin: 0;
+  max-width: 720px;
+}
+
+.caseIntro > p {
+  color: #a4ada5;
+  font-size: 16px;
+  line-height: 1.75;
+  margin: 20px 0 0;
+}
+
+.caseMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 23px;
+  color: #788179;
+  font-size: 12px;
+}
+
+.caseGallery {
+  margin: 60px 0 75px;
+}
+
+.galleryImage {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.galleryImageButton {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.imagePreview {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.85);
+
+  cursor: zoom-out;
+}
+
+.imagePreviewContent {
+  position: relative;
+  width: min(1200px, 90vw);
+  height: min(85vh, 900px);
+
+  cursor: zoom-out;
+}
+
+.imagePreviewContent img {
+  object-fit: contain;
+}
+
+.previewNavigationButton {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid #ffffff1a;
+  border-radius: 50%;
+  background: #171b19;
+  color: #ebece8;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.previewNavigationButton:hover {
+  background: #202622;
+  border-color: #ffffff30;
+}
+
+.galleryImageContent {
+  object-fit: contain;
+}
+
+.galleryControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  color: #777f78;
+  font-size: 12px;
+}
+
+.galleryControls > div {
+  display: flex;
+  gap: 6px;
+}
+
+.caseContent section {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 45px;
+  padding: 34px 0;
+  border-top: 1px solid #ffffff1e;
+}
+
+.caseContent h3 {
+  font:
+    500 18px "Manrope",
+    sans-serif;
+  margin: 0;
+}
+
+.caseContent p,
+.caseContent li {
+  color: #9da69e;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.caseContent ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.caseFooter {
+  margin-top: 65px;
+  border-top: 1px solid #ffffff20;
+  padding: 28px 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caseFooter strong {
+  font:
+    500 17px "Manrope",
+    sans-serif;
+}
+
+.primaryButton {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background: #b5d0b7;
+  color: #172019;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.primaryButton:hover {
+  background: #c9ddca;
+}
+
+@media (max-width: 700px) {
+  .modalBackdrop {
+    padding: 0;
+  }
+
+  .caseModal {
+    height: 100dvh;
+    width: 100%;
+    border: 0;
+  }
+
+  .modalInner {
+    padding: 43px 21px 0;
+  }
+
+  .caseIntro h2 {
+    font-size: 44px;
+  }
+
+  .caseGallery {
+    margin: 42px 0 55px;
+  }
+
+  .caseContent {
+    margin: 0;
+  }
+
+  .caseContent section {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 28px 0;
+  }
+
+  .caseFooter {
+    padding: 24px 21px;
+    align-items: flex-start;
+    gap: 22px;
+    flex-direction: column;
+  }
+}

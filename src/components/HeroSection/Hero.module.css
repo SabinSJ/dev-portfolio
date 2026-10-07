@@ -1,0 +1,168 @@
+.hero {
+  min-height: 690px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ffffff12;
+}
+
+.heroInner {
+  padding: 112px 0 120px;
+}
+
+.heroName {
+  font-size: 18px;
+  color: #a9c9ad;
+  margin: 0 0 32px;
+}
+
+.hero h1 {
+  font:
+    600 clamp(64px, 8vw, 104px) / 0.98 "Manrope",
+    sans-serif;
+  letter-spacing: -0.07em;
+  margin: 0;
+  max-width: 800px;
+}
+
+.hero h1 span {
+  color: #a9c9ad;
+}
+
+.heroDescription {
+  max-width: 590px;
+  color: #a6ada7;
+  font-size: 18px;
+  line-height: 1.75;
+  margin: 38px 0 31px;
+}
+
+.heroActions {
+  display: flex;
+  gap: 10px;
+}
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 22px;
+
+  border: 1px solid #ffffff20;
+  border-radius: 4px;
+
+  background: transparent;
+  color: #ebece8;
+
+  font: inherit;
+  font-size: 13px;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 20px;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.primaryButton {
+  background: #b5d0b7;
+  color: #172019;
+}
+
+.primaryButton:hover {
+  background: #c9ddca;
+}
+
+.secondaryButton {
+  border: 1px solid #ffffff2b;
+  color: #d8dcd8;
+}
+
+.secondaryButton:hover {
+  border-color: #7b8c7e;
+}
+
+.heroLinks {
+  margin-top: 76px;
+  display: flex;
+  gap: 25px;
+}
+
+.heroLinks a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 16px;
+  color: #858d87;
+  transition: color 0.2s;
+}
+
+.heroLinks a:hover {
+  color: #cdd4ce;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  min-height: 680px;
+}
+
+.heroContent {
+  min-width: 0;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 620px;
+  }
+
+  .heroInner {
+    padding: 92px 0;
+  }
+
+  .heroName {
+    margin-bottom: 25px;
+  }
+
+  .hero h1 {
+    font-size: clamp(50px, 14vw, 76px);
+  }
+
+  .heroDescription {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .heroLinks {
+    margin-top: 55px;
+  }
+
+  .heroInner {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .heroVisual {
+    display: none;
+  }
+}

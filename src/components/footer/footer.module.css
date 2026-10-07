@@ -1,27 +1,19 @@
 .footer {
-  width: 100%;
-  background-color: white;
-  border-top: 1px solid #eee;
-  padding: 40px 20px;
-  text-align: center;
+  border-top: 1px solid #ffffff17;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.footerInner {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #707871;
+  font-size: 11px;
 }
 
-.text {
-  color: #888;
-  margin-bottom: 10px;
-}
-
-.links a {
-  margin: 0 10px;
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.links a:hover {
-  text-decoration: underline;
+@media (max-width: 700px) {
+  .footerInner {
+    height: 80px;
+    gap: 20px;
+  }
 }

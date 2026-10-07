@@ -1,0 +1,65 @@
+.stackSection {
+  background: #0e1110;
+}
+
+.sectionHeading {
+  margin-bottom: 66px;
+}
+
+.eyebrow {
+  color: #91ad95;
+  font-size: 12px;
+  margin: 0 0 25px;
+}
+
+.sectionHeading h2 {
+  font:
+    600 clamp(38px, 4.5vw, 58px) / 1.12 "Manrope",
+    sans-serif;
+  letter-spacing: -0.055em;
+  margin: 0;
+  max-width: 720px;
+}
+
+.stackList {
+  border-top: 1px solid #ffffff22;
+}
+
+.stackItem {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  padding: 27px 0;
+  border-bottom: 1px solid #ffffff22;
+}
+
+.stackItem h3 {
+  font:
+    500 18px "Manrope",
+    sans-serif;
+  margin: 0;
+}
+
+.stackItem p {
+  color: #9ea69f;
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .stackItem {
+    grid-template-columns: 220px 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .sectionHeading {
+    margin-bottom: 46px;
+  }
+
+  .stackItem {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 25px 0;
+  }
+}

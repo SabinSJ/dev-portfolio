@@ -1,0 +1,63 @@
+.approachSection {
+  background: #151a17;
+  padding-top: 78px;
+  padding-bottom: 78px;
+}
+
+.approachLayout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 120px;
+}
+
+.approachLayout h2 {
+  font:
+    600 clamp(28px, 3vw, 36px) / 1.12 "Manrope",
+    sans-serif;
+  letter-spacing: -0.055em;
+  margin: 0;
+}
+
+.principles article {
+  padding: 0 0 29px;
+  margin-bottom: 29px;
+  border-bottom: 1px solid #ffffff1d;
+}
+
+.principles article:last-child {
+  margin-bottom: 0;
+}
+
+.principles h3 {
+  font:
+    500 19px "Manrope",
+    sans-serif;
+  letter-spacing: -0.025em;
+  margin: 0 0 10px;
+}
+
+.principles p {
+  color: #969f97;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 560px;
+}
+
+@media (max-width: 900px) {
+  .approachLayout {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .approachSection {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .approachLayout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+}

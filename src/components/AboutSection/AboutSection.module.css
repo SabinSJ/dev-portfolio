@@ -1,0 +1,59 @@
+.aboutSection {
+  background: #131715;
+}
+
+.aboutLayout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 110px;
+  padding-top: 45px;
+  border-top: 1px solid #ffffff1d;
+}
+
+.aboutLead {
+  font:
+    500 clamp(25px, 3vw, 38px) / 1.4 "Manrope",
+    sans-serif;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+.aboutCopy {
+  max-width: 590px;
+}
+
+.aboutCopy > p {
+  color: #a7aea8;
+  line-height: 1.9;
+  font-size: 15px;
+  margin: 0 0 23px;
+}
+
+.aboutNote {
+  border-top: 1px solid #ffffff20;
+  padding-top: 23px;
+  color: #848e86 !important;
+}
+
+.aboutNote strong {
+  color: #d8ddd8;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .aboutLayout {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutLayout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    padding-top: 33px;
+  }
+
+  .aboutLead {
+    font-size: 27px;
+  }
+}

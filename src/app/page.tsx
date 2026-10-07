@@ -1,15 +1,21 @@
-import Navbar from '@/components/navbar/navbar';
-import Hero from './sections/Hero'
-import Skills from '@/components/skills/skills';
-import Footer from '@/components/footer/footer';
+import Hero from "../components/HeroSection/Hero";
+import Skills from "@/components/SkillsSection/skills";
+import AboutSection from "@/components/AboutSection/AboutSection";
+import SelectedProjectsSection from "@/components/SelectedProjectsSection/SelectedProjectsSection";
+import Experience from "@/components/ExperienceSection/Experience";
+import Approach from "@/components/ApproachSection/Approach";
+import ContactSection from "@/components/ContactSection/ContactSection";
 
 export default function Home() {
   return (
-    <div style={{width: '100%', minHeight: '100vh', display: "flex", flexDirection: 'column', alignItems: 'center', justifyContent: "space-between", padding: '0 200px' }}>
-      <Navbar />
+    <>
       <Hero />
+      <AboutSection />
+      <SelectedProjectsSection />
+      <Experience />
       <Skills />
-      <Footer />
-    </div>
+      <Approach />
+      <ContactSection />
+    </>
   );
 }

@@ -1,0 +1,66 @@
+.experienceSection {
+  background: #131715;
+}
+
+.experienceList {
+  border-top: 1px solid #ffffff22;
+}
+
+.experienceList article {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 55px;
+  padding: 47px 0 55px;
+  border-bottom: 1px solid #ffffff22;
+}
+
+.experienceMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.experienceMeta span:first-child {
+  color: #c6ccc6;
+}
+
+.experienceMeta span:last-child {
+  color: #747d76;
+}
+
+.experienceBody {
+  max-width: 700px;
+}
+
+.experienceBody h3 {
+  font:
+    500 26px "Manrope",
+    sans-serif;
+  letter-spacing: -0.04em;
+  margin: 0 0 15px;
+}
+
+.experienceBody > p {
+  color: #9ea69f;
+  line-height: 1.8;
+  font-size: 14px;
+  margin: 0 0 17px;
+}
+
+.experienceTech {
+  color: #7f8b81 !important;
+  font-size: 12px !important;
+}
+
+@media (max-width: 700px) {
+  .experienceList article {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .experienceMeta {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

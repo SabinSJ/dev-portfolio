@@ -1,0 +1,93 @@
+.contactSection {
+  padding: 135px 0 105px;
+  scroll-margin-top: 30px;
+}
+
+.contactInner {
+  max-width: 1160px;
+}
+
+.contactInner h2 {
+  max-width: 740px;
+  font:
+    600 clamp(40px, 5vw, 62px) / 1.12 "Manrope",
+    sans-serif;
+  letter-spacing: -0.055em;
+  margin: 0;
+}
+
+.contactInner > p {
+  color: #98a099;
+  line-height: 1.8;
+  max-width: 560px;
+  margin: 28px 0;
+  font-size: 15px;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 46px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background: #b5d0b7;
+  color: #172019;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.primaryButton:hover {
+  background: #c9ddca;
+}
+
+.primaryButton:focus-visible {
+  outline: 2px solid #a8c5ac;
+  outline-offset: 4px;
+}
+
+.contactLinks {
+  margin-top: 80px;
+  padding-top: 25px;
+  border-top: 1px solid #ffffff20;
+  display: flex;
+  gap: 30px;
+  color: #878f88;
+  font-size: 13px;
+}
+
+.contactLinks a {
+  transition: color 0.2s;
+}
+
+.contactLinks a:hover {
+  color: #cbd2cc;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 700px) {
+  .contactSection {
+    padding: 90px 0 75px;
+  }
+
+  .contactInner h2 {
+    font-size: 40px;
+  }
+
+  .contactLinks {
+    margin-top: 60px;
+    flex-wrap: wrap;
+    gap: 16px 25px;
+  }
+}

@@ -1,0 +1,161 @@
+.workSection {
+  background: #0e1110;
+}
+
+.workGroupHeading {
+  color: #829086;
+  font-size: 13px;
+  margin: 24px 0;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding: 85px 0;
+  border-bottom: 1px solid #ffffff22;
+}
+
+.project:first-child {
+  padding-top: 0;
+}
+ZZ .project:nth-child(odd) {
+  flex-direction: row;
+}
+
+.project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.projectImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1.45;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 14px;
+
+  transition: transform 0.35s ease;
+}
+
+.projectImage img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  cursor: zoom-in;
+}
+
+.portraitImage {
+  max-height: 620px;
+}
+
+.portraitImage img {
+  width: auto;
+  max-width: 100%;
+  max-height: 620px;
+  height: auto;
+  object-fit: contain;
+}
+
+.projectImage:hover,
+.portraitImage:hover img {
+  transform: scale(1.015);
+}
+
+.imagePreview {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+  background: rgba(5, 7, 6, 0.88);
+  backdrop-filter: blur(8px);
+
+  cursor: zoom-out;
+}
+
+.imagePreviewContent {
+  position: relative;
+  width: min(1400px, 92vw);
+  height: min(820px, 88vh);
+}
+
+.imagePreviewContent img {
+  object-fit: contain;
+}
+
+.projectCopy {
+  flex: 0.55;
+  min-width: 0;
+}
+
+.projectCopy h3 {
+  font:
+    600 clamp(35px, 4vw, 52px) / 1.1 "Manrope",
+    sans-serif;
+  letter-spacing: -0.055em;
+  margin: 0 0 19px;
+}
+
+.projectCopy p {
+  color: #a1a9a2;
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 0 0 31px;
+}
+
+.buttonLink {
+  border: 0;
+  background: transparent;
+  color: #bad2bc;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .project {
+    gap: 40px;
+  }
+
+  .projectCopy h3 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 700px) {
+  .project {
+    flex-direction: column !important;
+    align-items: stretch;
+    gap: 30px;
+    padding: 60px 0;
+  }
+
+  .projectImage {
+    width: 100%;
+    flex: none;
+    aspect-ratio: 16 / 9;
+  }
+
+  .projectCopy {
+    flex: none;
+  }
+
+  .projectCopy h3 {
+    font-size: 36px;
+  }
+}

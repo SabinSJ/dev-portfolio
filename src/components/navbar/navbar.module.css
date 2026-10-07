@@ -1,43 +1,106 @@
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 2rem;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-    position: sticky;
-    top: 0;
-    z-index: 50;
+.siteHeader {
+  height: 76px;
+  border-bottom: 1px solid #ffffff15;
+  background: #0e1110ed;
+  position: relative;
+  z-index: 20;
 }
 
-.logo a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #111827;
-}
-
-.links {
+.headerInner {
+  height: 100%;
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
 }
 
-.links a {
-  text-decoration: none;
-  color: #374151;
-  font-weight: 500;
-  transition: color 0.2s ease;
+.wordmark {
+  font:
+    700 24px / 1 "Manrope",
+    sans-serif;
+  letter-spacing: -0.06em;
 }
 
-.links a:hover {
-  color: #2563eb; /* blue-600 */
+.wordmark span {
+  color: #a9c9ad;
 }
 
-.download {
-  background-color: #2563eb;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 0.375rem;
-  text-decoration: none;
+.siteHeader nav {
+  margin-left: auto;
+  display: flex;
+  gap: 32px;
+}
+
+.siteHeader nav a,
+.headerContact {
+  color: #a7aca7;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.siteHeader nav a:hover,
+.headerContact:hover {
+  color: #e8eae6;
+}
+
+.headerContact {
+  margin-left: 52px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #d9ddd8;
+}
+
+.menuButton,
+.mobileContact {
+  display: none;
+}
+
+.menuButton {
+  border: 0;
+  background: transparent;
+  color: #e4e7e3;
+  cursor: pointer;
+  padding: 5px;
+}
+
+@media (max-width: 700px) {
+  .siteHeader {
+    height: 68px;
+  }
+
+  .siteHeader nav {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background: #131715;
+    border-bottom: 1px solid #ffffff20;
+    padding: 14px 18px 22px;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navOpen {
+    display: flex !important;
+  }
+
+  .siteHeader nav a {
+    padding: 14px 5px;
+    border-bottom: 1px solid #ffffff14;
+  }
+
+  .mobileContact {
+    display: block;
+  }
+
+  .headerContact {
+    margin-left: auto;
+    margin-right: 18px;
+  }
+
+  .menuButton {
+    display: grid;
+    place-items: center;
+  }
 }
