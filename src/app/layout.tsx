@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "../../public/images/og-image.jpeg",
+        url: "/images/og-image.jpeg",
         width: 1200,
         height: 630,
         alt: "Florin Sabin Sarca — Full Stack Developer",
